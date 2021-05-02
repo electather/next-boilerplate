@@ -2,7 +2,6 @@
   "name": "nextjs-boilerplate",
   "description": "nextjs boilerplate, with support for critical css, tailwind, i18nex",
   "version": "1.0.0",
-  "private": true,
   "author": "Omid Astaraki <omid.ocean@gmail.com>",
   "license": "MIT",
   "keywords": [
