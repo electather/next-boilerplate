@@ -1,6 +1,10 @@
+import { GetStaticProps } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
+import { useTranslation } from 'next-i18next';
 
 export default function Home() {
+  const { t } = useTranslation(`common`);
   return (
     <div>
       <Head>
@@ -8,10 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="animate-spin">
-        <h1>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <main>
+        <h1>{t(`hello`)}</h1>
 
         <p>
           Get started by editing{` `}
@@ -58,3 +60,9 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale as string, [`common`])),
+  },
+});

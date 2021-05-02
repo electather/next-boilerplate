@@ -1,6 +1,9 @@
 import { AppProps } from 'next/app';
 import '@/styles/global.css';
+import { appWithTranslation } from 'next-i18next';
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+function WebApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
 }
+
+export default appWithTranslation(WebApp);
