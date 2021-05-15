@@ -25,8 +25,8 @@ const SIZE_MAPS: Record<Size, string> = {
 };
 
 const VARIANT_MAPS: Record<Variant, string> = {
-  solid: ``,
-  outlined: ``,
+  solid: `rounded-lg`,
+  outlined: `rounded-lg`,
   text: ``,
 };
 
