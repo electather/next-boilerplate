@@ -1,14 +1,9 @@
 {
-  "name": "nextjs-boilerplate",
-  "description": "nextjs boilerplate, with support for critical css, tailwind, i18nex",
-  "version": "1.0.0",
-  "author": "Omid Astaraki <omid.ocean@gmail.com>",
-  "license": "MIT",
-  "keywords": [
-    "nextjs",
-    "starter",
-    "typescript"
-  ],
+  "name": "bitbot-webapp",
+  "description": "bitbot webapp",
+  "version": "0.1.0",
+  "author": "BitexId",
+  "private": true,
   "scripts": {
     "dev": "next",
     "build": "next build",
