@@ -1,6 +1,5 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react';
+import React, { ButtonHTMLAttributes, ReactNode } from 'react';
 import clsx from 'clsx';
-
 // types
 type Variant = `solid` | `outlined` | `text`;
 
