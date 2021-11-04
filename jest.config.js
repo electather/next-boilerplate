@@ -1,4 +1,5 @@
-module.exports = {
+/** @type {import('@jest/types').Config.InitialOptions} */
+const jestConfig = {
   testPathIgnorePatterns: [`<rootDir>/.next/`, `<rootDir>/node_modules/`],
   setupFilesAfterEnv: [`<rootDir>/test-setup/setupTests.js`],
   testMatch: [`**/__tests__/*.ts?(x)`],
@@ -15,3 +16,5 @@ module.exports = {
   },
   testEnvironment: `jsdom`,
 };
+
+module.exports = jestConfig;
