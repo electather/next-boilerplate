@@ -1,14 +1,11 @@
 import '../src/styles/global.css';
-import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { DEFAULT_VIEWPORT } from '@storybook/addon-viewport';
 
 export const parameters = {
-  viewport: {
-    viewports: MINIMAL_VIEWPORTS,
-  },
   backgrounds: {
-    default: 'dark',
+    default: 'white',
     values: [
-      { name: 'dark', value: '#f9fafb' },
+      { name: 'dark', value: '#3c3c3c' },
       { name: 'white', value: '#ffffff' },
     ],
   },
