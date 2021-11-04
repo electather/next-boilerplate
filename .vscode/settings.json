@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["bitbot", "viewports"],
+  "cSpell.words": ["bitbot", "tailwindcss", "viewports"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   }

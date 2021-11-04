@@ -1,13 +1,13 @@
-/* eslint-disable import/no-extraneous-dependencies */
-const TailwindRtl = require('tailwindcss-rtl');
+const TailwindRtl = require(`tailwindcss-rtl`);
 
-module.exports = {
-  mode: 'jit',
+/** @type {import("@types/tailwindcss/tailwind-config").TailwindConfig } */
+const tailwindConfig = {
+  mode: `jit`,
   purge: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}',
+    `./pages/**/*.{js,ts,jsx,tsx}`,
+    `./src/components/**/*.{js,ts,jsx,tsx}`,
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     extend: {},
   },
@@ -16,3 +16,5 @@ module.exports = {
   },
   plugins: [TailwindRtl],
 };
+
+module.exports = tailwindConfig;
