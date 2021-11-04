@@ -3,6 +3,7 @@
   "description": "nextjs  boilerplate",
   "version": "0.1.0",
   "author": "Omid Astaraki",
+  "license": "MIT",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -11,7 +12,8 @@
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
     "postinstall": "husky install",
-    "storybook": "start-storybook -p 5000"
+    "storybook": "start-storybook -p 5000",
+    "test": "jest"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
@@ -25,19 +27,19 @@
     "next-i18next": "8.10.0",
     "next-seo": "4.28.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "yarn": "1.22.17"
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "7.16.0",
     "@commitlint/cli": "14.1.0",
     "@commitlint/config-conventional": "14.1.0",
     "@next/bundle-analyzer": "12.0.2",
-    "@storybook/addon-actions": "^6.3.12",
-    "@storybook/addon-essentials": "^6.3.12",
-    "@storybook/addon-links": "^6.3.12",
-    "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/react": "^6.3.12",
+    "@storybook/addon-essentials": "6.3.12",
+    "@storybook/addon-postcss": "2.0.0",
+    "@storybook/react": "6.3.12",
+    "@testing-library/dom": "8.11.0",
+    "@testing-library/jest-dom": "5.15.0",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/user-event": "13.5.0",
     "@types/node": "16.11.6",
     "@types/react": "17.0.34",
     "@types/react-dom": "17.0.11",
@@ -47,6 +49,7 @@
     "add": "2.0.6",
     "autoprefixer": "10.4.0",
     "awesome-typescript-loader": "5.2.1",
+    "babel-jest": "27.3.1",
     "babel-loader": "8.2.3",
     "commitizen": "4.2.4",
     "critters": "0.0.14",
@@ -61,13 +64,18 @@
     "eslint-plugin-react": "7.26.1",
     "eslint-plugin-react-hooks": "4.2.0",
     "husky": "7.0.4",
+    "jest": "27.3.1",
+    "jest-dom": "4.0.0",
     "lint-staged": "11.2.6",
     "next-compose-plugins": "2.2.1",
+    "node-mocks-http": "1.11.0",
     "postcss": "8.3.11",
     "prettier": "2.4.1",
     "react-docgen-typescript-loader": "3.7.2",
     "tailwindcss": "2.2.19",
     "tailwindcss-rtl": "0.7.3",
+    "ts-jest": "27.0.7",
+    "ts-loader": "9.2.6",
     "typescript": "4.4.4"
   },
   "config": {
