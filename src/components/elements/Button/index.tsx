@@ -1,5 +1,6 @@
-import React, { ButtonHTMLAttributes, ReactNode } from 'react';
+import { ButtonHTMLAttributes, ReactNode } from 'react';
 import clsx from 'clsx';
+
 // types
 type Variant = `solid` | `outlined` | `text`;
 
@@ -41,9 +42,6 @@ const COLOR_MAPS: Record<VariantColor, string> = {
   'text-primary': `text-revolver-200`,
 };
 
-/**
- * @component Button
- */
 function Button({
   variant = `solid`,
   size = `medium`,
@@ -59,6 +57,7 @@ function Button({
     SIZE_MAPS[size],
     className,
   );
+
   return (
     <button type="button" className={classes} {...rest}>
       {children}
