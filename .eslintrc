@@ -18,6 +18,8 @@
   "extends": ["airbnb", "prettier"],
   "rules": {
     "prettier/prettier": "error",
+    "quotes": ["error", "backtick"],
+    "quote-props": ["error", "as-needed"],
     "camelcase": "off",
     "import/prefer-default-export": "off",
     "react/prop-types": "off",
@@ -47,7 +49,6 @@
         "jsx": "never"
       }
     ],
-    "quotes": "off",
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
